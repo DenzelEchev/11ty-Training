@@ -1,0 +1,24 @@
+{
+  "name": "11ty-training",
+  "version": "1.0.0",
+  "description": "this is going to be the FOR REAL 11ty practice range",
+  "main": "index.js",
+  "scripts": {
+    "start":"eleventy --serve",
+    "build":"eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenzelEchev/11ty-Training.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DenzelEchev/11ty-Training/issues"
+  },
+  "homepage": "https://github.com/DenzelEchev/11ty-Training#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}
