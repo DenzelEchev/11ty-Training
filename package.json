@@ -4,8 +4,12 @@
   "description": "this is going to be the FOR REAL 11ty practice range",
   "main": "index.js",
   "scripts": {
-    "start":"eleventy --serve",
-    "build":"eleventy"
+    "watch:sass": "sass --watch src/sass:public/css",
+    "build:sass": "sass src/sass:public/css",
+    "watch:eleventy": "eleventy --serve",
+    "build:eleventy": "eleventy",
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:sass --parallel build:*"
   },
   "repository": {
     "type": "git",
