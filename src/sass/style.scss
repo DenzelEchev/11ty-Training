@@ -2,4 +2,11 @@ body {
     font-family: sans-serif;
     color: forestgreen;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
 }
