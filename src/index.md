@@ -11,3 +11,4 @@ Thiis is the first line.
 THis is the second line.  
 This is the third line.  
 
+<a href="/pages">To the Post Pages</a>
