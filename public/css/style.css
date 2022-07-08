@@ -1,6 +1,7 @@
+@import url("./reset.scss");
 body {
   font-family: sans-serif;
-  color: forestgreen;
+  color: navy;
   text-align: center;
   display: flex;
   flex-direction: column;

@@ -3,7 +3,7 @@ layout: layouts/pages-layout.njk
 title: Post Page
 ---
 
-# Hello
+# Welcome to the Post Page Area
 
 <ul>
 {% for page in collections.pages %}

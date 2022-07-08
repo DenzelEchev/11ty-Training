@@ -12,3 +12,5 @@ THis is the second line.
 This is the third line.  
 
 <a href="/pages">To the Post Pages</a>
+
+<img src="/assets/images/metion.jpeg" width ="900px">
