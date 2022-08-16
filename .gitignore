@@ -50,6 +50,9 @@ typings/
 # Optional npm cache directory
 .npm
 
+#11ty Fetch cache
+.cache
+
 # Optional eslint cache
 .eslintcache
 

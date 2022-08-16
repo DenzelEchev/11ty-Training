@@ -1,0 +1,18 @@
+---
+layout: layouts/home.njk
+title: "Eleventy Crash Course #1"
+---
+    
+ <h1>{{title}}</h1>
+ <h2>Homepage</h2>
+ <p>this is a paragraph</p>
+<a href="/contact">Go to the Contact Page</a>
+<a href="/news">NY Times News Articles</a>
+
+<img src="/assets/images/KAWS Painting.png" alt="painting photo" width="900px">
+
+<div class="home-card__container">
+    {% for card in cards %}
+        {% Card title=card.title, link=card.link, linkText=card.linkText %}
+    {% endfor %}
+</div>

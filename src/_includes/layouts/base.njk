@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% include "basehead.njk" %}
+{% include "basehead.njk" %}
+{# this is an include that pulls from whatever is in the include #}
+{% block head %}
+    
+{% endblock %}
+{# this is a block that extends the the head or anything else #}
 </head>
 <body>
-    <section>
-        {{ content | safe}}
-    </section
+{{content | safe}}
 </body>
 </html>

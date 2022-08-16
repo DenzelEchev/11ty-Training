@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+title: "New York Times Top Stories"
+description: "This is where the articles are located"
+---
+
+<h1>{{title}}</h1>
+
+<ul>
+  {% for story in topStories.results %}
+    <li><a href="{{ story.url }}" target="_blank" rel="noopener noreferrer">{{story.title}}</a></li>
+  {% endfor %}
+</ul>
+
+<a href="/">Back Home</a>

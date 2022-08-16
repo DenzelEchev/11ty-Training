@@ -1,0 +1,43 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+/* going forward I should name the file that is going to go with other files "global" */
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+  /* BASE STYLES
+  /*******************************************/
+
+body {
+  color: yellowgreen;
+  display: flex;
+  flex-direction: column;
+}
+
+/******************************************
+  /* LAYOUT
+  /*******************************************/
+header {
+  display: flex;
+}
+
+footer {
+  display: flex;
+}
+
+/******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
