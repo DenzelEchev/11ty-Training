@@ -1,18 +1,21 @@
-const Card = require('./src/_includes/components/Card');
+const Card = require("./src/_includes/components/Card");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("src/assets/");
+  eleventyConfig.addPassthroughCopy("src/css/");
 
-    eleventyConfig.addPassthroughCopy("src/assets/");
-    eleventyConfig.addPassthroughCopy("src/sass/");
+  eleventyConfig.addWatchTarget("src/css");
 
-    eleventyConfig.addWatchTarget("src/sass/")
-
-    eleventyConfig.addShortcode("Card", Card);
-
-    return{
-        dir: {
-            input: "src",
-            output: "public",
-        }
-    };
+  eleventyConfig.addShortcode("Card", Card);
+  return {
+    dir: {
+      input: "src",
+      output: "_site",
+      includes: "_includes",
+    },
+    templateFormats: ["md", "njk", "html"],
+    markdownTemplateEngine: "njk",
+    htmlTemplateEngine: "njk",
+    dataTemplateEngine: "njk",
+  };
 };
