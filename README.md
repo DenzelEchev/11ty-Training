@@ -6,3 +6,6 @@ I will be using a different repo for an actual 11ty project.
 ## 11ty to do list
 [] get a functional navigation bar
 [] have multiple pages and have nav bar route to each
+
+
+#Finished Testing and learning
